@@ -27,7 +27,7 @@ def calculate(stop_word):
     return probability
 
 
-def user_input():
+def input_с():
     try:
         stop_word = input('Введите стоп-слово: ')
 
@@ -40,7 +40,7 @@ def user_input():
 
     except ValueError or TypeError:
         print('Слово не должно содержать символы или цифры')
-        user_input()
+        input_с()
 
 
-user_input()
+input_с()
